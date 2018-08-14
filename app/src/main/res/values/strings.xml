@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Intent</string>
     <string name="toast_message">Hey there! I\'m an example of a beautiful custom toast.</string>
+    <string name="share">Show your love through</string>
 </resources>

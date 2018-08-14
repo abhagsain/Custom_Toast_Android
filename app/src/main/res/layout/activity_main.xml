@@ -1,20 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="showToast"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
-        android:text="Click me"/>
+        android:layout_height="wrap_content">
 
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="buttonShowToast"
+            android:text="Click me"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:visibility="invisible" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <Switch
+            android:id="@+id/switch_button"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Instagram App"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:onClick="startGoogle"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share app"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:onClick="shareApp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StartActivityForResult()"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:onClick="resultExample"/>
+
+    </LinearLayout>
 </RelativeLayout>
